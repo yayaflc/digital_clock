@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Display:ital@0;1&family=Lato:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(120deg, rgb(231, 93, 208), rgb(241, 209, 67));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.clock div{
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background:rgba(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clock span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.clock span.time{
+    font-size: 10px;
+}
+
+.infoDate {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: "DM Serif Display", sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 3px rgba(112, 112, 112, 0.7);;
+}
