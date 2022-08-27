@@ -52,7 +52,7 @@ body{
 .infoDate {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background: transparent;
     border-radius: 3px;
     font-weight: bolder;
@@ -60,4 +60,11 @@ body{
     font-family: "DM Serif Display", sans-serif;
     color: rgb(0, 0, 0);
     text-shadow: 3px 3px 3px rgba(112, 112, 112, 0.7);;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
