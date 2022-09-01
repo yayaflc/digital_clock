@@ -5,11 +5,6 @@ const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 const info = document.getElementById('info');
 
-
-const months = new Array ("January","February","March","April","May","June","July","August","September","October","November","December");
-const weeks = new Array ("Monday","Tuesday","","Wednesday","Thursday","Friday","Saturday","Sunday");
-
-
 const clock = setInterval(function time() {
     // definindo variavel de acordo com a função
     let dateToday = new Date();
@@ -21,6 +16,9 @@ const clock = setInterval(function time() {
     let min = dateToday.getMinutes();
     let s = dateToday.getSeconds();
 
+    var months = new Array ("January","February","March","April","May","June","July","August","September","October","November","December");
+    var weeks = new Array ("Monday","Tuesday","","Wednesday","Thursday","Friday","Saturday","Sunday");
+
     if( hr < 10) hr = '0' + hr;
     if( min < 10) min = '0' + min;
     if( s < 10) s = '0' + s;
@@ -31,5 +29,6 @@ const clock = setInterval(function time() {
     seconds.textContent = s;
 
     info.textContent = (weeks[week] + ", " + months[month] + " " + day + ", " + year);
+
 
 })
