@@ -9,30 +9,30 @@
 }
 
 :root {
-	--gradient: linear-gradient(
-		120deg,
-		#845ec2,
-		#d65db1,
-		#ff6f91,
-		#ff9617,
-		#f9f871
-		);
+    --gradient: linear-gradient(
+        120deg,
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9617,
+        #f9f871
+        );
 }
 
 body {
     height: 100vh;
     background-image: var(--gradient); 
     background-size: 300%;
-	background-position: right;
-	animation: bg-animation 7s infinite alternate;
-	display: flex;
+    background-position: right;
+    animation: bg-animation 7s infinite alternate;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 @keyframes bg-animation {
-	0% {background-position: right;}
-	100% {background-position: left;}
+    0% {background-position: right;}
+    100% {background-position: left;}
 }
 
 .clock {
