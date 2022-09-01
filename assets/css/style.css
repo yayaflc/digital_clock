@@ -1,20 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Display:ital@0;1&family=Lato:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital@0;1&display=swap');
 
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body{
+:root {
+	--gradient: linear-gradient(
+		120deg,
+		#845ec2,
+		#d65db1,
+		#ff6f91,
+		#ff9617,
+		#f9f871
+		);
+}
+
+body {
     height: 100vh;
-    background: linear-gradient(120deg, rgb(231, 93, 208), rgb(241, 209, 67));
-    display: flex;
+    background-image: var(--gradient); 
+    background-size: 300%;
+	background-position: right;
+	animation: bg-animation 7s infinite alternate;
+	display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.clock{
+@keyframes bg-animation {
+	0% {background-position: right;}
+	100% {background-position: left;}
+}
+
+.clock {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -25,7 +46,7 @@ body{
     box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
 }
 
-.clock div{
+.clock div {
     height: 170px;
     width: 150px;
     display: flex;
@@ -40,12 +61,12 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.clock span{
+.clock span {
     font-weight: bolder;
     font-size: 60px;
 }
 
-.clock span.time{
+.clock span.time {
     font-size: 10px;
 }
 
