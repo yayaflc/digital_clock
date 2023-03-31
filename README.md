@@ -1,6 +1,7 @@
-# digital_clock
-<em> ⏰ digital clock made with HTML, CSS & JavaScript </em>
-<br>
-my first project using JavaScript to pull local informations: date and time.
-<p></p>
-<img align='right' src="https://github.com/yayaflc/digital_clock/blob/main/screenshot.jpg">
+<h1 align='center'> digital clock ⏰ </h1>
+
+<p align='center'><i> my first project using JavaScript to pull local informations: date and time. </i>
+
+##
+
+<p align="center"><img src="https://github.com/yayaflc/digital_clock/blob/main/screenshot.jpg" width="70%">
